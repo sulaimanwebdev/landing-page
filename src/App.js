@@ -5,9 +5,9 @@ function App() {
   const [nav, setnav] = useState('-translate-x-full')
   return (
    <>
-    <div className="bg-[#0c0c0c] relative">
+    <div className="bg-[black] relative">
     <div className="w-full text-white">
-    <div className="flex bg-[#0c0c0c] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
+    <div className="flex bg-[black] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
        <div className="cursor-pointer"><img src="/images/logo.svg" alt="logo" className="w-[45px]"/></div>
        <div className="items-center gap-6 hidden md:flex">
         <a href="/#" className="transition">Home</a>
@@ -19,7 +19,7 @@ function App() {
       </div>
     </div>
 
-    <div className={`flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[#0c0c0c] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
+    <div className={`flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[black] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
        <a href="/#" className="transition">Home</a>
         <a href="/#" className="transition">Airdrop</a>
         <a href="/#" className="transition">Whitepaper</a>
@@ -38,7 +38,7 @@ function App() {
     <img src="/images/triangle.svg" className="hidden md:block absolute -bottom-[80px] right-10 w-[200px]" alt="dots" />
     </div>
 
-    <div className="w-full bg-[#050005] text-center">
+    <div className="w-full bg-[black] text-center">
       <div className="max-w-[780px] mx-auto text-white py-16 px-5">
       <div className="heading text-[35px] md:text-[55px] font-[900] leading-snug tracking-wide">Explore the community</div>
       <div className="tracking-wider max-w-[580px] leading-relaxed opacity-70 font-[300] mx-auto text-[16px] sm:text-[18px] mt-6">Join the discussion on one of our many forums. Learn about the Osmosis ecosystem, meet others, and become an active voice in the space.</div>
