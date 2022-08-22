@@ -1,35 +1,47 @@
+import { useState } from "react";
 
 function App() {
+
+  const [nav, setnav] = useState('-translate-x-full')
   return (
    <>
     <div className="bg-[#0c0c0c] relative">
     <div className="w-full text-white">
-    <div className="flex items-center py-3 justify-between px-5 max-w-[1300px] mx-auto">
+    <div className="flex bg-[#0c0c0c] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
        <div className="cursor-pointer"><img src="/images/logo.svg" alt="logo" className="w-[45px]"/></div>
-       <div className="flex items-center gap-6">
-        <a href="/#">Home</a>
-        <a href="/#">Airdrop</a>
-        <a href="/#">Whitepaper</a>
+       <div className="items-center gap-6 hidden md:flex">
+        <a href="/#" className="transition">Home</a>
+        <a href="/#" className="transition">Airdrop</a>
+        <a href="/#" className="transition">Whitepaper</a>
        </div>
-       <div><button className="custom-btn">Launch App</button></div>
+       <div className="hidden md:block"><button className="custom-btn">Launch App</button></div>
+       <button onClick={()=> {setnav('translate-x-0')}} className="block md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg></button>
       </div>
     </div>
 
+    <div className={`flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[#0c0c0c] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
+       <a href="/#" className="transition">Home</a>
+        <a href="/#" className="transition">Airdrop</a>
+        <a href="/#" className="transition">Whitepaper</a>
+       <button className="custom-btn w-fit">Launch App</button>
+       <button onClick={()=> {setnav('-translate-x-full')}} className="absolute top-5 right-6"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></button>
+       </div>
+
     <div className="pt-[100px] pb-10 px-5 max-w-[1300px] mx-auto text-white text-center relative" style={{zIndex: '10'}}>
-      <h1 className="heading text-[75px] font-[900] leading-snug tracking-wide" style={{wordSpacing: "6px"}}>Pulsechain<br/>Liquidity Wiz</h1>
-      <p className="tracking-wider text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
+      <h1 className="heading text-[50px] sm:text-[60px] md:text-[75px] font-[900] leading-snug tracking-wide" style={{wordSpacing: "6px"}}>Pulsechain<br/>Liquidity Wiz</h1>
+      <p className="tracking-wider text-[16px] sm:text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
       <img src="/images/main.svg" className="mx-auto w-[400px] mt-[60px]" alt="main" />
 
       <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powerd By Pulsechain</div>
     </div>
-    <img src="/images/dots.svg" className="absolute top-[220px] left-14" alt="dots" />
-    <img src="/images/triangle.svg" className="absolute -bottom-[80px] right-10 w-[200px]" alt="dots" />
+    <img src="/images/dots.svg" className="absolute top-[220px] left-0 md:left-14" alt="dots" />
+    <img src="/images/triangle.svg" className="hidden md:block absolute -bottom-[80px] right-10 w-[200px]" alt="dots" />
     </div>
 
     <div className="w-full bg-[#050005] text-center">
       <div className="max-w-[780px] mx-auto text-white py-16 px-5">
-      <div className="heading text-[55px] font-[900] leading-snug tracking-wide">Explore the community</div>
-      <div className="tracking-wider max-w-[580px] leading-relaxed opacity-70 font-[300] mx-auto text-[18px] mt-6">Join the discussion on one of our many forums. Learn about the Osmosis ecosystem, meet others, and become an active voice in the space.</div>
+      <div className="heading text-[35px] md:text-[55px] font-[900] leading-snug tracking-wide">Explore the community</div>
+      <div className="tracking-wider max-w-[580px] leading-relaxed opacity-70 font-[300] mx-auto text-[16px] sm:text-[18px] mt-6">Join the discussion on one of our many forums. Learn about the Osmosis ecosystem, meet others, and become an active voice in the space.</div>
        <div className="flex items-center justify-center flex-wrap gap-12 mt-12">
         <a href="/#" className="transition transform hover:-translate-y-1"><svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.5385 0.935038L1.62856 12.8467C0.719858 13.1969 0.733047 14.4871 1.64872 14.8187L9.17544 17.5439L27.6873 6.17694C27.8676 6.06622 28.0535 6.31032 27.8988 6.45469L13.386 20V28.2456L19 23.3333L26.3091 28.4768C27.3362 29.1995 28.7678 28.6405 29.0334 27.413L34.415 2.54148C34.6511 1.45026 33.5803 0.533565 32.5385 0.935038Z" fill="white"/></svg></a>
         <a href="/#" className="transition transform hover:-translate-y-1"><svg width="33" height="29" viewBox="0 0 33 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.675 4.95C28.0419 4.95 29.15 3.8419 29.15 2.475C29.15 1.1081 28.0419 0 26.675 0C25.7097 0 24.8734 0.552675 24.4654 1.35887L18.547 0.0137917C18.2538 -0.0528446 17.9614 0.128322 17.8906 0.420535L15.8568 8.80996C11.9742 8.92894 8.49395 10.1198 6.01849 11.9655C5.37927 11.3667 4.51995 11.0001 3.575 11.0001C1.60058 11.0001 0 12.6007 0 14.5751C0 16.0801 0.929958 17.3679 2.24659 17.8952C2.21573 18.1607 2.2 18.4291 2.2 18.7001C2.2 24.1677 8.60233 28.6001 16.5 28.6001C24.3977 28.6001 30.8 24.1677 30.8 18.7001C30.8 18.4291 30.7843 18.1607 30.7534 17.8952C32.07 17.3679 33 16.0801 33 14.5751C33 12.6007 31.3994 11.0001 29.425 11.0001C28.48 11.0001 27.6207 11.3667 26.9815 11.9655C24.4735 10.0955 20.934 8.8977 16.9897 8.80582L18.8319 1.20659L24.2005 2.42672C24.2002 2.44278 24.2 2.45887 24.2 2.475C24.2 3.8419 25.3081 4.95 26.675 4.95ZM24.75 17.0501C24.75 18.5688 23.5188 19.8001 22 19.8001C20.4812 19.8001 19.25 18.5688 19.25 17.0501C19.25 15.5313 20.4812 14.3001 22 14.3001C23.5188 14.3001 24.75 15.5313 24.75 17.0501ZM11 19.8001C12.5188 19.8001 13.75 18.5688 13.75 17.0501C13.75 15.5313 12.5188 14.3001 11 14.3001C9.48122 14.3001 8.25 15.5313 8.25 17.0501C8.25 18.5688 9.48122 19.8001 11 19.8001ZM10.3596 22.689C10.5866 22.4872 10.9343 22.5076 11.1361 22.7347C11.5936 23.2494 12.3472 23.6728 13.3089 23.9662C14.2628 24.2572 15.3764 24.4063 16.5 24.4063C17.6236 24.4063 18.7372 24.2572 19.6911 23.9662C20.6528 23.6728 21.4064 23.2494 21.8639 22.7347C22.0657 22.5076 22.4134 22.4872 22.6404 22.689C22.8674 22.8908 22.8879 23.2384 22.6861 23.4655C22.0436 24.1883 21.0784 24.693 20.0121 25.0183C18.9378 25.3461 17.7139 25.5063 16.5 25.5063C15.2861 25.5063 14.0622 25.3461 12.9879 25.0183C11.9216 24.693 10.9564 24.1883 10.3139 23.4655C10.1121 23.2384 10.1326 22.8908 10.3596 22.689Z" fill="white"/></svg></a>
