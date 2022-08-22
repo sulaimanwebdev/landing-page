@@ -5,42 +5,85 @@ function App() {
   const [nav, setnav] = useState('-translate-x-full')
   return (
    <>
-    <div className="bg-[black] relative">
+    <div className="bg-[black] relative text-center">
     <div className="w-full text-white">
     <div className="flex bg-[black] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
-       <div className="cursor-pointer"><img src="/images/logo.svg" alt="logo" className="w-[45px]"/></div>
-       <div className="items-center gap-6 hidden md:flex">
-        <a href="/#" className="transition">Home</a>
-        <a href="/#" className="transition">Airdrop</a>
-        <a href="/#" className="transition">Whitepaper</a>
+       <div className="cursor-pointer flex items-center gap-3 font-[500] text-[19px]"><img src="/images/logo.svg" alt="logo" className="w-[38px]"/><div className="transform translate-y-3.5">inch</div></div>
+       <div className="nav items-center gap-6 hidden md:flex">
+        <a href="/#" className="transition font-[500]">HOME</a>
+        <a href="/#" className="transition font-[500]">AIRDROP</a>
+        <a href="/#" className="transition font-[500]">WHITEPAPER</a>
        </div>
-       <div className="hidden md:block"><button className="custom-btn">Launch App</button></div>
+       <div className="hidden md:block">
+        <div class="outer button">
+            <button>LAUNCH APP</button>
+            <span></span>
+            <span></span>
+         </div>
+         </div>
        <button onClick={()=> {setnav('translate-x-0')}} className="block md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg></button>
       </div>
     </div>
 
-    <div className={`flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[black] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
-       <a href="/#" className="transition">Home</a>
-        <a href="/#" className="transition">Airdrop</a>
-        <a href="/#" className="transition">Whitepaper</a>
-       <button className="custom-btn w-fit">Launch App</button>
+    <div className={`nav flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[black] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
+       <a href="/#" className="transition font-[500]">HOME</a>
+        <a href="/#" className="transition font-[500]">AIRDROP</a>
+        <a href="/#" className="transition font-[500]">WHITEPAPER</a>
+        <div class="outer button">
+            <button>LAUNCH APP</button>
+            <span></span>
+            <span></span>
+         </div>
        <button onClick={()=> {setnav('-translate-x-full')}} className="absolute top-5 right-6"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></button>
        </div>
 
     <div className="pt-[100px] pb-10 px-5 max-w-[1300px] mx-auto text-white text-center relative" style={{zIndex: '10'}}>
-      <h1 className="heading text-[50px] sm:text-[60px] md:text-[75px] font-[900] leading-snug tracking-wide" style={{wordSpacing: "6px"}}>Pulsechain<br/>Liquidity Wiz</h1>
+      <h1 className="heading text-[50px] sm:text-[60px] md:text-[75px] font-[900] leading-snug tracking-wide" style={{wordSpacing: "6px"}}><div className="pulsechain">Pulsechain</div>Liquidity Wiz</h1>
       <p className="tracking-wider text-[16px] sm:text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
       <img src="/images/main.svg" className="mx-auto w-[400px] mt-[60px]" alt="main" />
-
       <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powerd By Pulsechain</div>
+    
+
+      <div className="text-[35px] md:text-[55px] font-[900] mt-[100px] md:mt-[150px] leading-snug tracking-wide">The largest interchain DEX</div>
+     <div className="flex items-center justify-center gap-16 flex-wrap mt-[70px] md:mt-[70px] mb-[30px] md:mb-[70px]">
+       <a href="/#" className="stat-block transition">
+        <div className="text-[70px] font-bold">$167 M</div>
+        <div className="flex items-center justify-center gap-2">
+          <div className="text-[20px] tracking-widest">TVL</div>
+          <img src="/images/arrow.svg" className="w-[35px]" alt="arrow" />
+        </div>
+       </a>
+
+       <a href="/#" className="stat-block transition">
+        <div className="text-[70px] font-bold">$13.4 M</div>
+        <div className="flex items-center justify-center gap-2">
+          <div className="text-[20px] tracking-widest">24 HR TRADING VOLUME</div>
+          <img src="/images/arrow.svg" className="w-[35px]" alt="arrow" />
+        </div>
+       </a>
+
+
+       <a href="/#" className="stat-block transition">
+        <div className="text-[70px] font-bold">1000+</div>
+        <div className="flex items-center justify-center gap-2">
+          <div className="text-[20px] tracking-widest">INTERCHAIN TRANSFERS</div>
+          <img src="/images/arrow.svg" className="w-[35px]" alt="arrow" />
+        </div>
+       </a>
+
+
+     </div>
+
+
     </div>
     <img src="/images/dots.svg" className="absolute top-[220px] left-0 md:left-14" alt="dots" />
     <img src="/images/triangle.svg" className="hidden md:block absolute -bottom-[80px] right-10 w-[200px]" alt="dots" />
+    
     </div>
 
     <div className="w-full bg-[black] text-center">
       <div className="max-w-[780px] mx-auto text-white py-16 px-5">
-      <div className="heading text-[35px] md:text-[55px] font-[900] leading-snug tracking-wide">Explore the community</div>
+      <div className="text-[35px] md:text-[55px] font-[900] leading-snug tracking-wide">Explore the community</div>
       <div className="tracking-wider max-w-[580px] leading-relaxed opacity-70 font-[300] mx-auto text-[16px] sm:text-[18px] mt-6">Join the discussion on one of our many forums. Learn about the Osmosis ecosystem, meet others, and become an active voice in the space.</div>
        <div className="flex items-center justify-center flex-wrap gap-12 mt-12">
         <a href="/#" className="transition transform hover:-translate-y-1"><svg width="35" height="29" viewBox="0 0 35 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32.5385 0.935038L1.62856 12.8467C0.719858 13.1969 0.733047 14.4871 1.64872 14.8187L9.17544 17.5439L27.6873 6.17694C27.8676 6.06622 28.0535 6.31032 27.8988 6.45469L13.386 20V28.2456L19 23.3333L26.3091 28.4768C27.3362 29.1995 28.7678 28.6405 29.0334 27.413L34.415 2.54148C34.6511 1.45026 33.5803 0.533565 32.5385 0.935038Z" fill="white"/></svg></a>
@@ -50,6 +93,7 @@ function App() {
       </div>
        </div>
     </div>
+
    </>
   );
 }
