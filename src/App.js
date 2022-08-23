@@ -75,7 +75,7 @@ setTimeout(function(){
        </div>
 
     <div className="pt-[100px] pb-10 px-5 max-w-[1300px] mx-auto text-white text-center relative" style={{zIndex: '10'}}>
-      <h1 className="heading text-[50px] sm:text-[60px] md:text-[7rem] font-[900] leading-[1.1] tracking-normal"><div className={`transition-colors ${text1}`}>Pulsechain</div><div className={`transition-colors ${text2}`}>Liquidity</div><div className={`transition-colors transform translate-y-2 ${text3}`}>Wiz</div></h1>
+      <h1 className="heading text-[4rem] sm:text-[5rem] md:text-[7rem] font-[900] leading-[1.1] tracking-normal"><div className={`transition-colors ${text1}`}>Pulsechain</div><div className={`transition-colors ${text2}`}>Liquidity</div><div className={`transition-colors transform translate-y-2 ${text3}`}>Wiz</div></h1>
       <p className="tracking-wider text-[16px] sm:text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
       <img src="/images/main.svg" className="mx-auto w-[400px] mt-[60px]" alt="main" />
       <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powered By Pulsechain</div>
