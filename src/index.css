@@ -27,8 +27,8 @@ body {
   background: #111;
 }
 .button{
-  height: 55px;
-  width: 160px;
+  height: 50px;
+  width: 140px;
   border-radius: 7px;
 }
 .circle{
@@ -47,15 +47,15 @@ body {
   color: #f2f2f2;
   outline: none;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   z-index: 9;
   letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
 }
 .button button{
-  height: 45px;
-  width: 150px;
+  height: 40px;
+  width: 130px;
   border-radius: 7px;
 }
 .circle button{
@@ -64,8 +64,8 @@ body {
   border-radius: 50%;
 }
 .outer span{
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 10px);
+  width: calc(100% - 10px);
   background: inherit;
 }
 .button span{
@@ -106,7 +106,7 @@ body {
   transform: scale(0.9);
 }
 
-.preloader{
+/* .preloader{
   animation: loader 0.5s 2s forwards;
 }
 
@@ -115,7 +115,7 @@ body {
     opacity: 0;
     visibility: hidden;
    }
-}
+} */
 
 
 
@@ -125,20 +125,28 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .liquidity{
-  background-image: linear-gradient(90deg,#7928ca,#ff0080);
+ 
+  background: linear-gradient(84.52deg, #AD0056 10%, #FF94E8 61.56%);
     color: #934bda;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .wiz{
-  background-image: linear-gradient(90deg,#7928ca,#ff0080);
-  color: #934bda;
-  -webkit-background-clip: text;
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-image: linear-gradient(90deg,#ff4d4d,#f9cb28);
+  position: relative;
+  z-index: 1;
 }

@@ -8,7 +8,7 @@ function App() {
   const [text3, settext3] = useState('');
 
   let runForever = () =>{
-    setInterval(function(){ 
+    setTimeout(function(){ 
       settext1('')
       settext2('liquidity');  
       settext3('');  
@@ -16,31 +16,32 @@ function App() {
   }, 3000);
 
 
-  setInterval(function(){ 
+  setTimeout(function(){ 
     settext1('')
     settext2('');  
     settext3('wiz');  
-}, 5000);
+}, 6000);
 
-setInterval(function(){ 
+setTimeout(function(){ 
   settext1('pulsechain')
   settext2('');  
   settext3('');  
-}, 7000);
+}, 9000);
   }
 
   useEffect(() => {
-
-    setTimeout(runForever, 3000)
+    runForever();
+    setInterval(runForever, 9000)
+ 
    
   }, [])
   
 
   return (
    <>
-    <div className="preloader z-[999999] flex items-center justify-center h-screen bg-white w-full fixed top-0 left-0">
+    {/* <div className="preloader z-[999999] flex items-center justify-center h-screen bg-white w-full fixed top-0 left-0">
     <img src="/images/loader.gif" alt="loader" />
-   </div>
+    </div> */}
     <div className="bg-[black] relative ">
     <div className="w-full text-white">
     <div className="flex bg-[black] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
@@ -74,7 +75,7 @@ setInterval(function(){
        </div>
 
     <div className="pt-[100px] pb-10 px-5 max-w-[1300px] mx-auto text-white text-center relative" style={{zIndex: '10'}}>
-      <h1 className="heading text-[50px] sm:text-[60px] md:text-[7rem] font-[900] leading-snug tracking-wide" style={{wordSpacing: "6px"}}><div className={`transition-colors ${text1}`}>Pulsechain</div><div className={`transition-colors ${text2}`}>Liquidity</div><div className={`transition-colors ${text3}`}>Wiz</div></h1>
+      <h1 className="heading text-[50px] sm:text-[60px] md:text-[7rem] font-[900] leading-tight tracking-wide" style={{wordSpacing: "6px"}}><div className={`transition-colors ${text1}`}>Pulsechain</div><div className={`transition-colors ${text2}`}>Liquidity</div><div className={`transition-colors ${text3}`}>Wiz</div></h1>
       <p className="tracking-wider text-[16px] sm:text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
       <img src="/images/main.svg" className="mx-auto w-[400px] mt-[60px]" alt="main" />
       <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powered By Pulsechain</div>
