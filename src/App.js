@@ -8,7 +8,7 @@ function App() {
     <div className="preloader z-[999999] flex items-center justify-center h-screen bg-white w-full fixed top-0 left-0">
     <img src="/images/loader.gif" alt="loader" />
    </div>
-    <div className="bg-[black] relative text-center">
+    <div className="bg-[black] relative ">
     <div className="w-full text-white">
     <div className="flex bg-[black] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
        <div className="cursor-pointer flex items-center gap-3 font-[500] text-[19px]"><img src="/images/logo.svg" alt="logo" className="w-[38px]"/><div className="transform translate-y-3.5">inch</div></div>
@@ -28,7 +28,7 @@ function App() {
       </div>
     </div>
 
-    <div className={`nav flex text-white md:hidden z-[999] text-shite w-full fixed h-screen top-0 left-0 bg-[black] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
+    <div className={`nav flex text-white md:hidden z-[999] text-left text-shite w-full fixed h-screen top-0 left-0 bg-[black] px-5 pb-6 pt-[50px] gap-10 flex-col transform transition ${nav}`}>
        <a href="/#" className="transition font-[500]">HOME</a>
         <a href="/#" className="transition font-[500]">AIRDROP</a>
         <a href="/#" className="transition font-[500]">WHITEPAPER</a>
