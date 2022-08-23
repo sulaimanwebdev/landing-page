@@ -125,28 +125,21 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .liquidity{
- 
-  background: linear-gradient(84.52deg, #AD0056 10%, #FF94E8 61.56%);
+  background: linear-gradient(90.5deg, #7928CA 16.55%, #FF0080 74.17%);
     color: #934bda;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .wiz{
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  background-image: linear-gradient(90deg,#ff4d4d,#f9cb28);
-  position: relative;
-  z-index: 1;
+
+  background: linear-gradient(90deg, #FF4D4D 35.35%, #FFFF20 73.7%);
+  color: orange;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
