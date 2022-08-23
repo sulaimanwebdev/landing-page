@@ -118,3 +118,14 @@ body {
   text-shadow: 0 0 75px rgba(95, 189, 251, 0.67);
   transform: scale(0.9);
 }
+
+.preloader{
+  animation: loader 0.5s 2s forwards;
+}
+
+@keyframes loader {
+   to{
+    opacity: 0;
+    visibility: hidden;
+   }
+}

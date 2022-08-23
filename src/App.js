@@ -5,6 +5,9 @@ function App() {
   const [nav, setnav] = useState('-translate-x-full')
   return (
    <>
+    <div className="preloader z-[999999] flex items-center justify-center h-screen bg-white w-full fixed top-0 left-0">
+    <img src="/images/loader.gif" alt="loader" />
+   </div>
     <div className="bg-[black] relative text-center">
     <div className="w-full text-white">
     <div className="flex bg-[black] items-center py-3 z-[999] justify-between px-5 max-w-[1300px] mx-auto">
