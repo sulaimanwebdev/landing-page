@@ -136,10 +136,17 @@ body {
 }
 
 .wiz{
-
   background: linear-gradient(90deg, #FF4D4D 35.35%, #FFFF20 73.7%);
   color: orange;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+
+.blueGrad{
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg,#8700d4,#00fff7);
 }

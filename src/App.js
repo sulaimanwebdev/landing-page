@@ -81,6 +81,48 @@ setTimeout(function(){
       <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powered By Pulsechain</div>
     
 
+
+      <div className="mt-[100px] md:mt-[150px] mx-auto max-w-[1120px]">
+        <div className="font-[700] text-[27px] blueGrad">FEATURES</div>
+      <div className="text-[35px] md:text-[55px] font-[900] mt-6 leading-snug tracking-wide mb-5">Decentralised Exchange on Pulsechain</div>
+      
+      <div className="mb-24 flex justify-between gap-5 text-left">
+        <div className="text-[16px] text-[#a0a0a0] max-w-[450px] leading-relaxed">Developers love</div>
+        <div className="text-[16px] text-[#a0a0a0] max-w-[450px] leading-relaxed">6inch will be the best DEX on Pulsechain proving value and valuing both traders and Liquidity Providers. 6inch will be the best DEX on Pulsechain proving value and valuing both.</div>
+      </div>
+      
+      <div className="flex gap-6 justify-between text-left">
+         <div><img src="/images/sideimage.svg" alt="side" className="w-[470px]" /></div>
+        <div>
+        <div className="max-w-[550px]">
+          <div className="text-[25px] font-[600]">Small Sacrifice Pool</div>
+          <div className="mt-3 text-[16px] text-[#a0a0a0] leading-relaxed">The total amount to be raised set a maximum of only $25,000. Only the true early supporters gets to be a part of buying the tokens in its early stage.</div>
+         </div>
+
+         <div className="mt-14 max-w-[550px]">
+          <div className="text-[25px] font-[600]">Retroactive Airdrops</div>
+          <div className="mt-3 text-[16px] text-[#a0a0a0] leading-relaxed">Recurring retroactive airdrops depending on the volume from your wallet.</div>
+         </div>
+
+
+         <div className="mt-14 max-w-[550px]">
+          <div className="text-[25px] font-[600]">Community Oriented</div>
+          <div className="mt-3 text-[16px] text-[#a0a0a0] leading-relaxed">Zero tokens pre-owned by the team. All tokens are only for those who helps in the adoptions of 6inch.</div>
+         </div>
+
+
+
+        </div>
+
+      </div>
+        
+      </div>
+
+
+
+
+
+
       <div className="text-[35px] md:text-[55px] font-[900] mt-[100px] md:mt-[150px] leading-snug tracking-wide">People's DEX of Pulsechain</div>
      <div className="flex items-center justify-center gap-16 flex-wrap mt-[70px] md:mt-[70px] mb-[30px] md:mb-[70px]">
        <a href="/#" className="stat-block transition">
