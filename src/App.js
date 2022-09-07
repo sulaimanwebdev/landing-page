@@ -77,12 +77,15 @@ setTimeout(function(){
     <div className="pt-[100px] pb-10 px-5 max-w-[1300px] mx-auto text-white text-center relative" style={{zIndex: '10'}}>
       <h1 className="heading text-[4rem] sm:text-[5rem] md:text-[7rem] font-[900] leading-[1.1] tracking-normal"><div className={`transition-colors ${text1}`}>Pulsechain</div><div className={`transition-colors ${text2}`}>Liquidity</div><div className={`transition-colors transform translate-y-2 ${text3}`}>Wiz</div></h1>
       <p className="tracking-wider text-[16px] sm:text-[18px] mt-6">First DEX where traders earn along with Liquidity Providers</p>
-      <img src="/images/main.svg" className="mx-auto w-[400px] mt-[60px]" alt="main" />
-      <div className="mx-auto w-full md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powered By Pulsechain</div>
+      <div className="mx-auto w-full mt-6 md:w-[600px] py-2 rounded-md bg-white text-black font-[500]">Powered By Pulsechain</div>
     
 
 
-      <div className="mt-[100px] md:mt-[150px] mx-auto max-w-[1120px]">
+      <div className="mt-[160px] mx-auto max-w-[1120px]">
+        <div className="w-full flex items-center justify-center">
+           <div className="relative w-[50px] h-[50px] rounded-full text-[17px] mb-[30px] font-[500] flex items-center justify-center blueGradCircle text-white">1 <div className="absolute left-1/2 bottom-full h-[100px] w-[1px] lineGrad"></div></div>
+        </div>
+
         <div className="font-[700] text-[27px] blueGrad">FEATURES</div>
       <div className="text-[35px] md:text-[55px] font-[900] mt-6 leading-snug tracking-wide mb-5">Decentralised Exchange on Pulsechain</div>
       
@@ -110,10 +113,20 @@ setTimeout(function(){
           <div className="mt-3 text-[16px] text-[#a0a0a0] leading-relaxed">Zero tokens pre-owned by the team. All tokens are only for those who helps in the adoptions of 6inch.</div>
          </div>
 
-
-
         </div>
 
+      </div>
+
+
+      <div className="mt-20 font-[500]">SUPPORTED CHAINS</div>
+      <div className="mt-6 flex items-center justify-center gap-7 flex-wrap">
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
+       <div className="min-w-[50px] min-h-[50px] bg-white bg-opacity-20 rounded-full"></div>
       </div>
         
       </div>
