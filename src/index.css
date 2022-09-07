@@ -24,12 +24,12 @@ body {
 
 .outer{
   position: relative;
-  background: #111;
+  background: transparent;
 }
 .button{
   height: 50px;
   width: 140px;
-  border-radius: 7px;
+  border-radius: 4px;
 }
 .circle{
   height: 200px;
@@ -43,8 +43,8 @@ body {
   transform: translate(-50%, -50%);
 }
 .outer button{
-  background: #111;
-  color: #f2f2f2;
+  background: white;
+  color: black;
   outline: none;
   border: none;
   font-size: 15px;
@@ -56,7 +56,7 @@ body {
 .button button{
   height: 40px;
   width: 130px;
-  border-radius: 7px;
+  border-radius: 4px;
 }
 .circle button{
   height: 180px;
