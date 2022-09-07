@@ -89,12 +89,12 @@ setTimeout(function(){
         <div className="font-[700] text-[27px] blueGrad">FEATURES</div>
       <div className="text-[35px] md:text-[55px] font-[900] mt-6 leading-snug tracking-wide mb-5">Decentralised Exchange on Pulsechain</div>
       
-      <div className="mb-24 flex justify-between gap-5 text-left">
-        <div className="text-[16px] text-[#a0a0a0] max-w-[450px] leading-relaxed">Developers love</div>
-        <div className="text-[16px] text-[#a0a0a0] max-w-[450px] leading-relaxed">6inch will be the best DEX on Pulsechain proving value and valuing both traders and Liquidity Providers. 6inch will be the best DEX on Pulsechain proving value and valuing both.</div>
+      <div className="mb-24 flex justify-between gap-8 md:gap-5 text-center md:text-left flex-col md:flex-row">
+        <div className="text-[16px] text-[#a0a0a0] md:max-w-[450px] leading-relaxed">Developers love</div>
+        <div className="text-[16px] text-[#a0a0a0] md:max-w-[450px] leading-relaxed">6inch will be the best DEX on Pulsechain proving value and valuing both traders and Liquidity Providers. 6inch will be the best DEX on Pulsechain proving value and valuing both.</div>
       </div>
       
-      <div className="flex gap-6 justify-between text-left">
+      <div className="flex gap-16 items-center flex-col md:flex-row lg:items-start justify-between text-left">
          <div><img src="/images/sideimage.svg" alt="side" className="w-[470px]" /></div>
         <div>
         <div className="max-w-[550px]">
