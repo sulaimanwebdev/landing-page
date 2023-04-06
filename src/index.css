@@ -12,10 +12,14 @@ body {
 }
 
 .customBG{
-  background: linear-gradient(90deg, #184EFF 0%, #0AA7FF 100%);
+  background: linear-gradient(225deg, #FF8F03 14.89%, #C22863 85.85%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .customShadow{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.customShadow2{
+  box-shadow: -4px -4px 12px #FC890A, 4px 4px 12px #FC890A;
 }
