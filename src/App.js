@@ -3,22 +3,22 @@ function App() {
 
   return (
    <>
-    <div className="relative text-white text-center overflow-hidden px-4 min-h-[calc(100vh-280px)]">
+    <div className="relative text-white text-center overflow-hidden min-h-[calc(100vh-280px)]">
      <div className="relative z-50">
-        <div className="absolute top-24 left-5 flex items-center flex-col gap-8 w-fit">
+        <div className="absolute top-24 left-5 hidden lg2:flex items-center flex-col gap-8 w-fit">
           <img src="/images/icon1.svg" alt="icon" />
           <img src="/images/icon2.svg" alt="icon" />
           <img src="/images/icon3.svg" alt="icon" />
         </div>
 
 
-        <div className="max-w-[900px] mx-auto flex items-center justify-center flex-col pt-12">
+        <div className="max-w-[900px] mx-auto flex items-center justify-center flex-col pt-12 px-4">
           <img src="/images/logo.svg" alt="logo" className="w-[500px]" />
 
           <div className="text-[38px] font-bold mt-8">Exklusive <span className="text-[#184EFF]">$14</span> No-Deposit Offer 🎁</div>
           <div className="text-[15px] text-[#5D69BE] font-[500] mt-3">To celebrate the launch of our Sportsbook we have partnered with Blockchair to give all users a FREE$14 Non-Deposit Bonus.</div>
           
-          <div className="flex items-center gap-7 rounded-xl bg-[#161E56] px-5 mt-8">
+          <div className="flex items-center gap-1 sm2:gap-7 flex-col sm2:flex-row rounded-xl bg-[#161E56] px-5 pt-4 sm2:pt-0 mt-8">
             <div className="text-[#5D69BE] font-[500]">The Free Non-Deposit Bonus can be claimed in:</div>
             <img src="/images/coins.svg" alt="coins" className="w-[170px]" />
           </div>
